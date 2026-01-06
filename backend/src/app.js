@@ -8,9 +8,20 @@ import voiceRoutes from "./routes/voice.routes.js"
 
 const app = express()
 
-app.use(cors())
+// ✅CORS Configuration
+app.use(cors({
+  origin: [
+    'http://localhost:5173',       // Vite dev server
+               
+  ],
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
+}))
+
 app.use(express.json())
 
+// Root route
 app.get("/", (req, res) => {
   res.json({ 
     message: "🚜 AgroSense AI Backend is Running!",
