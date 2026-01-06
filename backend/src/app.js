@@ -11,7 +11,7 @@ const app = express()
 // ✅CORS Configuration
 app.use(cors({
   origin: [
-    'http://localhost:5173',       // Vite dev server
+    'https://agriculture-ai-rouge.vercel.app/',       // vercel dev server
                
   ],
   credentials: true,

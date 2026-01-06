@@ -1,4 +1,4 @@
-const API_BASE_URL = import.meta.env.BackendUrl || "http://localhost:5000/api"
+const API_BASE_URL = import.meta.env.VITE_BACKEND_URL || "http://localhost:5000/api"
 
 // Voice Assistant - Get crop advice
 export const getCropAdvice = async (crop, problem, language = "English") => {

@@ -294,10 +294,7 @@ export default function WeatherAdvisory() {
           'Safe for pesticide/fungicide application',
           'Ideal time for fertilizer application',
           'Good for land preparation and plowing',
-          'Perfect for pruning and weeding',
-          'Best time for harvesting if crops are ready',
-          'Safe for drone spraying operations',
-          'Suitable for equipment maintenance outdoors'
+         
         ]
       })
     } else {
