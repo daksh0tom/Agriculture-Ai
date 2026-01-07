@@ -31,8 +31,7 @@ export const textToSpeech = async (text, language = "English") => {
   }
 }
 
-// Optional: If you want server-side TTS with Google Cloud
-// Uncomment and use this if you have Google Cloud credentials
+
 /*
 import textToSpeech from '@google-cloud/text-to-speech'
 
